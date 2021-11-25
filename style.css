@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&family=Patrick+Hand+SC&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Patrick Hand SC', cursive;
+    background-color: white;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo {
+    height: 70vh;
+    width: 60vw;
+    border-radius: 30px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+/* contains text input & button*/
+.todocommands {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 15px;
+}
+
+/* modifies text input*/
+.todoinput {
+    width: 30vw;
+    height: 5vh;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid lightgray;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 25px;
+    text-align: center;
+}
+
+/* modifies button*/
+.add {
+    width: 10vw;
+    height: 5vh;  
+    border: 0;
+    outline: none;
+    border: 1px dotted lightgray;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    font-family: 'Mali', cursive;
+    font-size: 15px;
+}
+
+.list {
+    height: 80%;
+    overflow-y: scroll;
+}
+
+.list li {
+    list-style: none;
+    font-size: 25px;
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 93%;
+}
+
+.checkbox {
+    margin-top: 2%;
+    margin-right: 10px;
+}
+
+.delete-todo {
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: auto;
+}
